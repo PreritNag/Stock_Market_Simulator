@@ -4,7 +4,18 @@ import { useDispatch, useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
 import { updatePrices, updateLatestCandle } from '../store/marketSlice';
 
-const SOCKET_URL = window.location.origin;
+const getSocketUrl = () => {
+  const apiUrl = import.meta.env.VITE_API_URL;
+  if (!apiUrl) return window.location.origin;
+  try {
+    const url = new URL(apiUrl, window.location.origin);
+    return url.origin;
+  } catch (e) {
+    return window.location.origin;
+  }
+};
+
+const SOCKET_URL = getSocketUrl();
 
 export function useSocket() {
   const socketRef = useRef(null);
