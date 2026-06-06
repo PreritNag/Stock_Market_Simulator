@@ -39,7 +39,21 @@ app.use(express.json({
 app.use(express.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-connectDB();
+connectDB().then(async () => {
+  try {
+    const Stock = require('./models/Stock');
+    const count = await Stock.countDocuments();
+    if (count === 0) {
+      console.log('[Auto-Seeder] No stocks found in database. Auto-seeding 150+ assets from Yahoo Finance...');
+      const seedStocks = require('./seeds/stockSeeder');
+      seedStocks(false, false);
+    } else {
+      console.log(`[Auto-Seeder] Database already populated with ${count} stocks.`);
+    }
+  } catch (err) {
+    console.error('[Auto-Seeder] Error checking/seeding database:', err.message);
+  }
+});
 
 // Mount routes
 app.use('/api/auth', authRoutes);
