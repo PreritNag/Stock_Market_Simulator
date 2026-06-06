@@ -246,7 +246,7 @@ export default function Login() {
                 Welcome back
               </h1>
               <p className="text-xs sm:text-sm text-slate-400 dark:text-slate-500 mt-2">
-                Sign in to your <span className="text-amber-400 font-extrabold">BullForge</span> account
+                Sign in to your <span className="text-amber-400 font-extrabold">BullCash</span> account
               </p>
             </div>
 

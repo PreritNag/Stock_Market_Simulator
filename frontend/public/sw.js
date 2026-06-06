@@ -1,5 +1,5 @@
 /*
- * Service Worker for BullForge Push Notifications
+ * Service Worker for BullCash Push Notifications
  */
 
 self.addEventListener('push', (event) => {
@@ -9,18 +9,18 @@ self.addEventListener('push', (event) => {
       data = event.data.json();
     } catch (e) {
       data = {
-        title: 'BullForge Notification',
+        title: 'BullCash Notification',
         body: event.data.text()
       };
     }
   }
 
-  const title = data.title || 'BullForge Price Alert';
+  const title = data.title || 'BullCash Price Alert';
   const options = {
     body: data.body || 'Your target price threshold has been crossed.',
     icon: '/favicon.ico',
     badge: '/favicon.ico',
-    tag: 'bullforge-alert-' + (data.data?.symbol || 'generic'),
+    tag: 'bullcash-alert-' + (data.data?.symbol || 'generic'),
     renotify: true,
     data: data.data || {},
     actions: [

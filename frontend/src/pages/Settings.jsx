@@ -80,7 +80,7 @@ export default function Settings() {
             </div>
             <div>
               <h3 className="text-lg font-extrabold text-slate-800">{user?.name || 'User'}</h3>
-              <p className="text-sm text-slate-500">BullForge Trader</p>
+              <p className="text-sm text-slate-500">BullCash Trader</p>
             </div>
           </div>
 
@@ -242,7 +242,7 @@ export default function Settings() {
           </div>
           <div className="px-6 py-4 flex items-center justify-between">
             <span className="text-sm text-slate-600">Platform</span>
-            <span className="text-xs font-bold text-slate-400">BullForge Web</span>
+            <span className="text-xs font-bold text-slate-400">BullCash Web</span>
           </div>
           <div className="px-6 py-4 flex items-center justify-between">
             <span className="text-sm text-slate-600">License</span>

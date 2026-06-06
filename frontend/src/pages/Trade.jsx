@@ -97,7 +97,7 @@ export default function Trade() {
       {/* Top Breadcrumb & Actions Bar */}
       <div className="flex flex-wrap items-center justify-between gap-4 py-2.5 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 rounded-xl shadow-sm">
         <div className="flex items-center gap-3">
-          <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">BullForge / Explore / {symbol}</span>
+          <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">BullCash / Explore / {symbol}</span>
           <span className="text-[10px] bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 text-emerald-700 dark:text-emerald-450 px-2 py-0.5 rounded font-extrabold">
             Live
           </span>

@@ -11,7 +11,7 @@ export default {
           200: '#fef08a',
           300: '#fde047',
           400: '#facc15',
-          500: '#0a0f1d', // Midnight Indigo (BullForge brand primary)
+          500: '#0a0f1d', // Midnight Indigo (BullCash brand primary)
           600: '#151b2e',
           700: '#0a0f1d',
           800: '#060a14',

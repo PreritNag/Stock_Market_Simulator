@@ -18,7 +18,7 @@ const createOrder = async (req, res) => {
           price_data: {
             currency: 'inr',
             product_data: {
-              name: 'BullForge Wallet Top-up (₹5,000 Virtual Credit)',
+              name: 'BullCash Wallet Top-up (₹5,000 Virtual Credit)',
               description: 'Top-up your virtual trading balance. Real money is used for verification only.',
             },
             unit_amount: 100, // ₹1.00 INR (100 paise)

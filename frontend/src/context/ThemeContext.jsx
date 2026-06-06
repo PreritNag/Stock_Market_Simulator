@@ -5,7 +5,7 @@ const ThemeContext = createContext();
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     // Get stored preference or fall back to system preferences
-    const stored = localStorage.getItem('bullforge-theme');
+    const stored = localStorage.getItem('bullcash-theme');
     if (stored) return stored;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
@@ -17,7 +17,7 @@ export function ThemeProvider({ children }) {
     } else {
       root.classList.remove('dark');
     }
-    localStorage.setItem('bullforge-theme', theme);
+    localStorage.setItem('bullcash-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {

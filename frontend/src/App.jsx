@@ -47,7 +47,7 @@ export default function App() {
   if (loading && token) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-surface">
-        <LoadingSpinner size="lg" text="Loading BullForge..." />
+        <LoadingSpinner size="lg" text="Loading BullCash..." />
       </div>
     );
   }

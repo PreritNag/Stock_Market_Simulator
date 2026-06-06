@@ -38,7 +38,7 @@ const marketSlice = createSlice({
     loading: false,
     searchLoading: false,
     error: null,
-    activePrimaryTab: 'BullForge',
+    activePrimaryTab: 'BullCash',
   },
   reducers: {
     setActivePrimaryTab(state, action) {

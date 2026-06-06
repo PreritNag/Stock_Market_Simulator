@@ -101,7 +101,7 @@ export default function Dashboard() {
       <div className="space-y-6">
         {/* Breadcrumb */}
         <div className="text-xs font-bold text-slate-400 dark:text-slate-500 tracking-wide">
-          BullForge / <span className="text-slate-800 dark:text-slate-350">Explore</span>
+          BullCash / <span className="text-slate-800 dark:text-slate-350">Explore</span>
         </div>
 
         {/* Desktop Split Layout Grid */}
@@ -695,7 +695,7 @@ export default function Dashboard() {
       <div className="space-y-6">
         {/* Breadcrumb */}
         <div className="text-xs font-bold text-slate-400 dark:text-slate-500 tracking-wide">
-          BullForge / <span className="text-slate-800 dark:text-slate-350">Mutual Funds</span>
+          BullCash / <span className="text-slate-800 dark:text-slate-350">Mutual Funds</span>
         </div>
 
         {/* Hero */}
@@ -776,7 +776,7 @@ export default function Dashboard() {
       <div className="space-y-6">
         {/* Breadcrumb */}
         <div className="text-xs font-bold text-slate-400 dark:text-slate-500 tracking-wide">
-          BullForge / <span className="text-slate-800 dark:text-slate-350">Futures & Options</span>
+          BullCash / <span className="text-slate-800 dark:text-slate-350">Futures & Options</span>
         </div>
 
         {/* Hero */}

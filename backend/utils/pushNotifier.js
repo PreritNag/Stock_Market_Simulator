@@ -19,7 +19,7 @@ if (!vapidKeys.publicKey || !vapidKeys.privateKey) {
 }
 
 webpush.setVapidDetails(
-  'mailto:support@bullforge.com',
+  'mailto:support@bullcash.com',
   vapidKeys.publicKey,
   vapidKeys.privateKey
 );

@@ -65,7 +65,7 @@ export default function Navbar() {
     { name: 'Dashboard', isExternal: false },
     { name: 'US Stocks', isExternal: false },
     { name: 'Mutual Funds', isExternal: false },
-    { name: 'BullForge', isExternal: false },
+    { name: 'BullCash', isExternal: false },
     { name: 'F&O', isExternal: false },
     { name: 'Flash Trading', isExternal: true },
     { name: 'Algo Trading', isExternal: true }
