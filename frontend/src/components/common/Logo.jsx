@@ -71,7 +71,7 @@ export default function Logo({ size = 'md', showText = true, variant = 'default'
       {/* Brand Text */}
       {showText && (
         <span className={`${selectedTextSize} ${selectedTextColor} transition-colors duration-300`}>
-          Bull<span className="text-amber-400 group-hover:text-amber-300 transition-colors">Forge</span>
+          Bull<span className="text-amber-400 group-hover:text-amber-300 transition-colors">Cash</span>
         </span>
       )}
     </div>
